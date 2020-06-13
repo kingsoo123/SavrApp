@@ -59,17 +59,17 @@ class LoginScreen extends Component{
             if(phoneNumber === '' || isNaN(phoneNumber) || phoneNumber === '' || isNaN(phoneNumber)){
                 this.showAlert()
             }else{
-               /*  const saver = await Axios.post('https://savrapi.herokuapp.com/saver', {phoneNumber, pinNumber});
-                const data = saver.data; */
-                /* const nameVal = data.data.name;
+                const saver = await Axios.post('https://savrapi.herokuapp.com/saver', {phoneNumber, pinNumber});
+                const data = saver.data; 
+                const nameVal = data.data.name;
                 const emailVal = data.data.email;
-                const phoneNumberVal = data.data.phoneNumber; */
-              /*   alert(`Great to have you on onboard ${data.data.name}`);
+                const phoneNumberVal = data.data.phoneNumber; 
+                alert(`Great to have you on onboard ${data.data.name}`);
                 this.props.navigation.navigate('Registration');
                 this.state.phoneNumber ='';
-                this.state.pinNumber =''; */
+                this.state.pinNumber =''; 
             
-                //Axios.get('http://192.168.4.105:2020/saver');
+                Axios.get('http://192.168.4.105:2020/saver');
                 null
             }
            
